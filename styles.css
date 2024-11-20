@@ -1,0 +1,38 @@
+body {
+  background: #a6adc8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  background: #1e1e2e;
+}
+
+.header,
+.content-one,
+.content-two,
+.content-three {
+  height: 60vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 30vh;
+}
+
+.header-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  height: 10vh;
+}
