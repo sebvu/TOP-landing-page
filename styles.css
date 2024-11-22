@@ -14,11 +14,9 @@ body {
   background-position: bottom left;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 ul {
@@ -31,23 +29,31 @@ a {
   text-decoration: none;
 }
 
-.header {
-  background-image: url("./images/header-cutoff.png");
-  background-repeat: no-repeat;
-  background-position: 0px 200px;
-  background-attachment: scroll;
-  min-height: 700px;
-  flex: auto;
-  padding: 5em 30vh;
-
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
+h1 {
+  padding: 0;
+  margin: 0;
 }
 
-@media all and (max-width: 1000px) {
+#divider {
+  background-image: url("./images/header-cutoff.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-y: 90%;
+  min-height: 300px;
+  flex: auto;
+}
+
+.header {
+  flex: auto;
+  padding: 5em 30vh 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+@media all and (max-width: 1200px) {
   .header {
-    padding: 3em 8vh;
+    padding: 3em 8vh 0;
   }
 }
 
@@ -58,15 +64,15 @@ a {
   gap: 3em;
 }
 
-.bar .links a {
+a {
   color: #cba6f7;
 }
 
-.bar .links a:visited {
+a:visited {
   color: #8839ef;
 }
 
-.bar .logo {
+.header-text {
   background: #181825;
   color: #f38ba8;
   font-size: 1.2em;
@@ -85,14 +91,25 @@ a {
   color: #f38ba8;
   display: flex;
   flex-wrap: wrap;
+  gap: 2em;
 }
 
 .header-content .left-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  min-width: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-content .right-content {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
 }
 
 .header-content .left-content .title {
@@ -104,13 +121,34 @@ a {
   font-size: 1.5em;
 }
 
+.header-content .left-content a {
+  background: #f38ba8;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+}
+
+.header-content .right-content .img-container {
+  aspect-ratio: 1/1;
+  height: 80%;
+  border-radius: 100%;
+  border: 5px solid #f38ba8;
+  overflow: hidden;
+}
+
+.header-content .right-content .img-container img {
+  max-width: 100%;
+}
+
 .content-parent {
   background: #181825;
   flex: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 5em;
 }
+
 .content-one,
 .content-two,
 .content-three {
@@ -123,6 +161,8 @@ a {
   /* background: #b4befe; */
   background: #585b70;
   background: #11111b;
-  height: 15vh;
+  height: 25vh;
   min-height: 100px;
+  flex: auto;
+  padding: 3em;
 }
