@@ -153,6 +153,94 @@ a:visited {
 .content-two,
 .content-three {
   flex: 1;
+  padding: 1em;
+}
+
+.content-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-one .pets-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-one .pets-container div {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.content-one .pets-container div img {
+  border: 5px solid #89b4fa;
+}
+
+.content-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-two p {
+  background: #11111b;
+  border-radius: 30px;
+  font-size: 32px;
+  padding: 2em;
+  position: relative;
+}
+
+.content-two p::before {
+  content: "";
+  position: absolute;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 30px solid #11111b;
+  top: -30px;
+  left: 25px;
+}
+
+.content-two p strong {
+  color: #f38ba8;
+}
+
+.content-two p em {
+  color: #cba6f7;
+}
+
+.content-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-three .ad-block {
+  background: #bf616a;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+}
+
+.content-three .ad-block h2 {
+  color: #88c0d0;
+}
+
+.content-three .ad-block p {
+  color: #d8dee9;
+}
+
+.content-three .ad-block a {
+  color: #4c566a;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border: 2px solid #d8dee9;
 }
 
 /* footer */
