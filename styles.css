@@ -226,6 +226,8 @@ a:visited {
   padding: 0.5em 1em;
   display: flex;
   align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
 .content-three .ad-block h2 {
@@ -234,13 +236,6 @@ a:visited {
 
 .content-three .ad-block p {
   color: #d8dee9;
-}
-
-.content-three .ad-block a {
-  color: #4c566a;
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  border: 2px solid #d8dee9;
 }
 
 /* footer */
