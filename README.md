@@ -1,5 +1,7 @@
 # Landing Project
 
-Just a fun, experimental landing project.
+Basic pure HTML, CSS website I spent a night on sadly
 
-Color theme accreddited fully to [catppuccin](https://catppuccin.com/), an absolutely amazing color scheme.
+- Credits
+  - [Catppuccin Theme](https://catppuccin.com/)
+  - [Nord Theme](https://www.nordtheme.com/)
